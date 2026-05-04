@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639131857750000000
-    m_Hash: 2765765094
+      ticks: 639134571070000000
+    m_Hash: 4195664849
   m_LockFileStatus:
     m_FilePath: /Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639131857750000000
-    m_Hash: 3478389788
+      ticks: 639134571100000000
+    m_Hash: 1717238040
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,12 +22,12 @@ m_LocalPackages:
 m_ProjectPath: /Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Packages
 m_EditorVersion: 6000.3.6f1 (bbb010bdb8a3)
 m_ResolvedPackages:
-- packageId: com.unity.ai.navigation@2.0.9
+- packageId: com.unity.ai.navigation@2.0.11
   testable: 0
   isDirectDependency: 1
-  version: 2.0.9
+  version: 2.0.11
   source: 1
-  resolvedPath: /Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.ai.navigation@5218e4bf7edc
+  resolvedPath: /Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.ai.navigation@78534c21b27d
   assetPath: Packages/com.unity.ai.navigation
   name: com.unity.ai.navigation
   displayName: AI Navigation
@@ -116,13 +116,13 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638919725134710000
+  datePublishedTicks: 639071871875160000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ai.navigation.git
-    revision: 91b1bd9119720d8e48b9f9de9ad18da1e8c1088e
+    revision: b6751ff1ceb9a01f5b469d0aec8b249581bb7725
     path: 
   unityLifecycle:
     version: 2.0.9
@@ -136,18 +136,8 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Added\n* New sample scene **9_agent_cornering_control**
-    to demonstrate controlling an agent''s velocity in order to better navigate tight
-    corners. ([UUM-59747](https://issuetracker.unity3d.com/product/unity/issues/guid/UUM-59747))\n\n###
-    Fixed\n* Fixed samples not correctly configuring navigation agent types when
-    imported into a project.\n* Foldouts in **AI Navigation** overlay collapse when
-    toggling settings. ([NAVB-144](https://issuetracker.unity3d.com/product/unity/issues/guid/NAVB-144))\n*
-    Fixed poor performance when enabling/disabling increasing numbers of NavMeshModifiers.
-    ([NAVB-96](https://issuetracker.unity3d.com/product/unity/issues/guid/NAVB-96))\n*
-    A small white square was displayed in the scene on top of the gizmo icons for
-    NavMesh Link, NavMesh Modifier Volume and NavMesh Surface. ([NAVB-154](https://issuetracker.unity3d.com/product/unity/issues/guid/NAVB-154))\n*
-    **Navigation Updater** no longer attempts to process scenes and prefabs from
-    the read-only **Packages** folder. ([NAVB-146](https://issuetracker.unity3d.com/product/unity/issues/guid/NAVB-146))"}'
+  upmReserved: '{"changelog":"### Fixed\n* Small correction in the UI definition
+    of the Navigation Updater window."}'
   signature:
     status: 1
     reason: Signature is ok
@@ -161,11 +151,245 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 5218e4bf7edc04fcad4ed3836c1c41aef334b996
+  fingerprint: 78534c21b27d2c95f8220f5db8dce95627a32911
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.9
     minimumUnityVersion: 6000.0
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.cinemachine@3.1.6
+  testable: 0
+  isDirectDependency: 1
+  version: 3.1.6
+  source: 1
+  resolvedPath: /Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.cinemachine@285f38545487
+  assetPath: Packages/com.unity.cinemachine
+  name: com.unity.cinemachine
+  displayName: Cinemachine
+  author:
+    name: 
+    email: 
+    url: 
+  category: cinematography
+  type: 
+  description: "Smart camera tools for passionate creators. \n\nCinemachine 3 is
+    a newer and better version of Cinemachine, but upgrading an existing project
+    from 2.X will likely require some effort.  If you're considering upgrading an
+    older project, please see our upgrade guide in the user manual."
+  errors: []
+  versions:
+    all:
+    - 2.1.11-beta.1
+    - 2.1.12
+    - 2.1.13
+    - 2.2.0
+    - 2.2.7
+    - 2.2.8
+    - 2.2.9
+    - 2.2.10-preview.3
+    - 2.2.10-preview.4
+    - 2.3.1
+    - 2.3.3
+    - 2.3.4
+    - 2.3.5-preview.3
+    - 2.4.0-preview.3
+    - 2.4.0-preview.4
+    - 2.4.0-preview.6
+    - 2.4.0-preview.7
+    - 2.4.0-preview.8
+    - 2.4.0-preview.9
+    - 2.4.0-preview.10
+    - 2.4.0
+    - 2.5.0
+    - 2.6.0-preview.2
+    - 2.6.0-preview.3
+    - 2.6.0-preview.5
+    - 2.6.0-preview.8
+    - 2.6.0
+    - 2.6.1-preview.6
+    - 2.6.1
+    - 2.6.2-preview.1
+    - 2.6.2
+    - 2.6.3-preview.2
+    - 2.6.3
+    - 2.6.4
+    - 2.6.5
+    - 2.6.9
+    - 2.6.10
+    - 2.6.11
+    - 2.6.14
+    - 2.6.15
+    - 2.6.17
+    - 2.7.1
+    - 2.7.2
+    - 2.7.3
+    - 2.7.4
+    - 2.7.5
+    - 2.7.8
+    - 2.7.9
+    - 2.8.0-exp.1
+    - 2.8.0-exp.2
+    - 2.8.0-pre.1
+    - 2.8.0
+    - 2.8.1
+    - 2.8.2
+    - 2.8.3
+    - 2.8.4
+    - 2.8.6
+    - 2.8.9
+    - 2.9.0-pre.1
+    - 2.9.0-pre.6
+    - 2.9.1
+    - 2.9.2
+    - 2.9.4
+    - 2.9.5
+    - 2.9.7
+    - 2.10.0
+    - 2.10.1
+    - 2.10.2
+    - 2.10.3
+    - 2.10.4
+    - 2.10.5
+    - 2.10.6
+    - 2.10.7
+    - 3.0.0-pre.3
+    - 3.0.0-pre.4
+    - 3.0.0-pre.5
+    - 3.0.0-pre.6
+    - 3.0.0-pre.7
+    - 3.0.0-pre.8
+    - 3.0.0-pre.9
+    - 3.0.1
+    - 3.1.0
+    - 3.1.1
+    - 3.1.2
+    - 3.1.3
+    - 3.1.4
+    - 3.1.5
+    - 3.1.6
+    compatible:
+    - 2.10.5
+    - 2.10.6
+    - 2.10.7
+    - 3.0.0-pre.3
+    - 3.0.0-pre.4
+    - 3.0.0-pre.5
+    - 3.0.0-pre.6
+    - 3.0.0-pre.7
+    - 3.0.0-pre.8
+    - 3.0.0-pre.9
+    - 3.0.1
+    - 3.1.0
+    - 3.1.1
+    - 3.1.2
+    - 3.1.3
+    - 3.1.4
+    - 3.1.5
+    - 3.1.6
+    recommended: 3.1.6
+    deprecated: []
+  dependencies:
+  - name: com.unity.splines
+    version: 2.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.splines
+    version: 2.8.2
+  - name: com.unity.mathematics
+    version: 1.3.3
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.settings-manager
+    version: 2.1.1
+  keywords:
+  - camera
+  - follow
+  - rig
+  - fps
+  - cinematography
+  - aim
+  - orbit
+  - cutscene
+  - cinematic
+  - collision
+  - freelook
+  - cinemachine
+  - compose
+  - composition
+  - dolly
+  - track
+  - clearshot
+  - noise
+  - framing
+  - handheld
+  - lens
+  - impulse
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 639076318093840000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.cinemachine@3.1/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.cinemachine.git
+    revision: 293f7764a9c6e9f087fad05023a586dcfdc1939b
+    path: 
+  unityLifecycle:
+    version: 2.10.5
+    nextVersion: 
+    recommendedVersion: 3.1.0
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Bugfixes\n- Fixed look at being ignored in third
+    person camera when camera is navel gazing.\n- Fixed error when both HDRP and
+    URP rendering pipelines are added to a project.\\\n- Fixed outdated warning on
+    RotationComposerComponent.\n- Fixed GC Alloc in CinemachineInputAxisController.Update().\n-
+    Fixed ForceCameraPosition regression in CinemachineFollow/CinemachineOrbitalFollow/CinemachineTransposer/CinemachineOrbitalTransposer
+    to allow looking away from targets.\n\n### Changed\n- Converted code using InstanceID
+    references and API to EntityID."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 285f385454873b7d4509f804a9b4c840e834066a
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 2.10.5
+    minimumUnityVersion: 2022.3
   compliance:
     status: 0
     violation:
@@ -383,6 +607,128 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
+- packageId: com.unity.feature.development@1.0.2
+  testable: 0
+  isDirectDependency: 1
+  version: 1.0.2
+  source: 2
+  resolvedPath: /Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.feature.development@767aadbc6eb7
+  assetPath: Packages/com.unity.feature.development
+  name: com.unity.feature.development
+  displayName: Engineering
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: feature
+  description: "Optimize your development experience in Unity with the Dev Tools
+    feature set. Enable support for multiple integrated development environments
+    (IDE) for editing your Unity code. Get access to development tools to help you
+    test and analyze your project\u2019s performance."
+  errors: []
+  versions:
+    all:
+    - 1.0.2
+    compatible:
+    - 1.0.2
+    recommended: 1.0.2
+    deprecated: []
+  dependencies:
+  - name: com.unity.ide.visualstudio
+    version: default
+  - name: com.unity.ide.rider
+    version: default
+  - name: com.unity.editorcoroutines
+    version: default
+  - name: com.unity.performance.profile-analyzer
+    version: default
+  - name: com.unity.test-framework
+    version: default
+  - name: com.unity.testtools.codecoverage
+    version: default
+  resolvedDependencies:
+  - name: com.unity.ide.visualstudio
+    version: 2.0.27
+  - name: com.unity.test-framework
+    version: 1.6.0
+  - name: com.unity.ext.nunit
+    version: 2.0.5
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.ide.rider
+    version: 3.0.38
+  - name: com.unity.editorcoroutines
+    version: 1.0.1
+  - name: com.unity.performance.profile-analyzer
+    version: 1.3.4
+  - name: com.unity.testtools.codecoverage
+    version: 1.2.7
+  - name: com.unity.settings-manager
+    version: 2.1.1
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 1.0.2
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"quickstart":"https://docs.unity3d.com/Documentation/Manual/DeveloperToolsFeature.html"}'
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 767aadbc6eb72681a4ca807c8fa248e0230a0cef
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.0.2
+    minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.ide.rider@3.0.38
   testable: 0
   isDirectDependency: 1
@@ -529,12 +875,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.ide.visualstudio@2.0.26
+- packageId: com.unity.ide.visualstudio@2.0.27
   testable: 0
   isDirectDependency: 1
-  version: 2.0.26
+  version: 2.0.27
   source: 1
-  resolvedPath: /Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.ide.visualstudio@a99d56dec63f
+  resolvedPath: /Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.ide.visualstudio@dc1ddd4f09b6
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -611,13 +957,13 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 639014773899080000
+  datePublishedTicks: 639057939089480000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: a52ff32ff9e8cf43be6597597939ef63126ab463
+    revision: 4b2a3082a6e79faf658e8d766c820083b736eed6
     path: 
   unityLifecycle:
     version: 2.0.26
@@ -631,9 +977,11 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"Integration:\n\n- Fix handling of asset-pipeline refresh-mode
-    setting.\n\nProject generation:\n\n- Add `EnableOnDemandExcludedFolderLoading`
-    capability when generating SDK-Style project."}'
+  upmReserved: '{"changelog":"Integration:\n\n- Fix Visual Studio Integration to
+    properly wait for the solution to be opened.\n\nProject generation:\n\n- Disable
+    Workspace-based development feature in `settings.json`.\n- Ensure that we only
+    have one `sln` or `slnx` file at a time.\n- Properly handle filenames with special
+    characters in `link` tags."}'
   signature:
     status: 1
     reason: Signature is ok
@@ -647,7 +995,7 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: a99d56dec63ffb3a911a5a9bce9b77ba862a601c
+  fingerprint: dc1ddd4f09b68a99b5dc00185f3b7551294e28a7
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.26
@@ -5444,6 +5792,506 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
+- packageId: com.unity.editorcoroutines@1.0.1
+  testable: 0
+  isDirectDependency: 0
+  version: 1.0.1
+  source: 1
+  resolvedPath: /Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.editorcoroutines@54394ed3283c
+  assetPath: Packages/com.unity.editorcoroutines
+  name: com.unity.editorcoroutines
+  displayName: Editor Coroutines
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: 'The editor coroutines package allows developers to start constructs
+    similar to Unity''s monobehaviour based coroutines within the editor using abitrary
+    objects. '
+  errors: []
+  versions:
+    all:
+    - 0.0.1-preview.3
+    - 0.0.1-preview.4
+    - 0.0.1-preview.5
+    - 0.0.2-preview.1
+    - 0.1.0-preview.1
+    - 0.1.0-preview.2
+    - 1.0.0
+    - 1.0.1
+    - 1.1.0
+    compatible:
+    - 1.0.1
+    - 1.1.0
+    recommended: 1.0.1
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - coroutine
+  - coroutines
+  - editor
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638929288706330000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.editorcoroutines.git
+    revision: f67fc9992bbc7a553b17375de53a8b2db136528e
+    path: 
+  unityLifecycle:
+    version: 1.0.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 54394ed3283c1d492d6a80602b05b04bd0863f8b
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.0.1
+    minimumUnityVersion: 2018.1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.performance.profile-analyzer@1.3.4
+  testable: 0
+  isDirectDependency: 0
+  version: 1.3.4
+  source: 1
+  resolvedPath: /Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.performance.profile-analyzer@418130329099
+  assetPath: Packages/com.unity.performance.profile-analyzer
+  name: com.unity.performance.profile-analyzer
+  displayName: Profile Analyzer
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: "The Profile Analyzer tool supports the standard Unity Profiler. You
+    can use it to analyze multiple frames and multiple data sets of the CPU data
+    in the Profiler.\n\nMain features: \n\u25AA Multi-frame analysis of a single
+    set of Profiler CPU data \n\u25AA Comparison of two multi-frame profile scans
+    \n\n"
+  errors: []
+  versions:
+    all:
+    - 0.4.0-preview.3
+    - 0.4.0-preview.5
+    - 0.4.0-preview.6
+    - 0.5.0-preview.1
+    - 0.6.0-preview.1
+    - 0.7.0-preview.4
+    - 1.0.0
+    - 1.0.1
+    - 1.0.2
+    - 1.0.3
+    - 1.1.0-pre.2
+    - 1.1.0
+    - 1.1.1
+    - 1.2.2
+    - 1.2.3
+    - 1.2.4
+    - 1.3.0
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    compatible:
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    recommended: 1.3.4
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 639107212394660000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.performance.profile-analyzer@1.3/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.performance.profile-analyzer.git
+    revision: 2b7a0e832ced04e744605b8b938cc55b16ad84f8
+    path: 
+  unityLifecycle:
+    version: 1.3.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Fixed\n* Fix for UUM-138420 - Frame time values
+    differ between Profiler and Profile Analyzer when comparing the same marker on
+    the same frame."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 41813032909958a6281861a5c3afd259645dbf78
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.3.1
+    minimumUnityVersion: 2021.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.testtools.codecoverage@1.2.7
+  testable: 0
+  isDirectDependency: 0
+  version: 1.2.7
+  source: 1
+  resolvedPath: /Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.testtools.codecoverage@e4e5058206c0
+  assetPath: Packages/com.unity.testtools.codecoverage
+  name: com.unity.testtools.codecoverage
+  displayName: Code Coverage
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Use this package to export code coverage data and reports from your
+    automated tests. Additionally, the Code Coverage package offers a Coverage Recording
+    feature which allows capturing coverage data on demand, for manual testing or
+    when there are no automated tests in the project.
+  errors: []
+  versions:
+    all:
+    - 0.2.0-preview
+    - 0.2.1-preview
+    - 0.2.2-preview
+    - 0.2.3-preview
+    - 0.3.0-preview
+    - 0.3.1-preview
+    - 0.4.0-preview
+    - 0.4.1-preview
+    - 0.4.2-preview
+    - 0.4.3-preview
+    - 1.0.0-pre.1
+    - 1.0.0-pre.2
+    - 1.0.0-pre.3
+    - 1.0.0-pre.4
+    - 1.0.0
+    - 1.0.1
+    - 1.1.0
+    - 1.1.1
+    - 1.2.0-exp.1
+    - 1.2.0-exp.2
+    - 1.2.0-exp.3
+    - 1.2.0-exp.4
+    - 1.2.0-exp.5
+    - 1.2.0-exp.6
+    - 1.2.0-exp.7
+    - 1.2.0
+    - 1.2.1
+    - 1.2.2
+    - 1.2.3
+    - 1.2.4
+    - 1.2.5
+    - 1.2.6
+    - 1.2.7
+    - 1.3.0
+    compatible:
+    - 1.2.7
+    - 1.3.0
+    recommended: 1.2.7
+    deprecated: []
+  dependencies:
+  - name: com.unity.test-framework
+    version: 1.0.16
+  - name: com.unity.settings-manager
+    version: 1.0.1
+  resolvedDependencies:
+  - name: com.unity.test-framework
+    version: 1.6.0
+  - name: com.unity.ext.nunit
+    version: 2.0.5
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.settings-manager
+    version: 2.1.1
+  keywords:
+  - test
+  - coverage
+  - testing
+  - opencover
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638932757879800000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@1.2/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.testtools.codecoverage.git
+    revision: 959db8ff97eedf9b211ad5cf320b87ac01f1e90f
+    path: 
+  unityLifecycle:
+    version: 1.2.7
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Fixes\n- Documentation: Fixed formatting in [Using
+    Code Coverage in batchmode](https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@1.2/manual/CoverageBatchmode.html)
+    page (case [COV-40](https://issuetracker.unity3d.com/issues/docs-formatting-in-using-code-coverage-in-batchmode-docs-page-is-incorrect)).\n-
+    Removed the references to the deprecated FindObjectOfType method in the *Asteroids
+    sample project* (case [COV-42](https://issuetracker.unity3d.com/issues/sample-project-is-using-obsolete-findobjectoftype-method-which-causes-multiple-warnings-in-console-when-it-is-imported)).\n-
+    Added missing logs for the ReportGenerator (case [COV-46](https://issuetracker.unity3d.com/issues/code-coverage-package-does-not-report-some-of-the-internal-reportgenerator-errors))."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: e4e5058206c0366fe007d33a3e2ba7e3db89bc1b
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.2.7
+    minimumUnityVersion: 2019.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.splines@2.8.2
+  testable: 0
+  isDirectDependency: 0
+  version: 2.8.2
+  source: 1
+  resolvedPath: /Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.splines@1cb7d86fc7ff
+  assetPath: Packages/com.unity.splines
+  name: com.unity.splines
+  displayName: Splines
+  author:
+    name: 
+    email: 
+    url: 
+  category: Tool
+  type: 
+  description: Work with curves and paths. Use the Splines package to generate objects
+    and behaviors along paths, create trajectories, and draw shapes.
+  errors: []
+  versions:
+    all:
+    - 0.1.0-preview.1
+    - 1.0.0-pre.5
+    - 1.0.0-pre.7
+    - 1.0.0-pre.8
+    - 1.0.0-pre.9
+    - 1.0.0
+    - 1.0.1
+    - 2.0.0-pre.2
+    - 2.0.0-pre.4
+    - 2.0.0
+    - 2.1.0
+    - 2.2.0
+    - 2.2.1
+    - 2.3.0
+    - 2.4.0
+    - 2.5.1
+    - 2.5.2
+    - 2.6.0
+    - 2.6.1
+    - 2.7.1
+    - 2.7.2
+    - 2.8.0
+    - 2.8.1
+    - 2.8.2
+    - 2.8.3
+    - 2.8.4
+    compatible:
+    - 2.8.2
+    - 2.8.3
+    - 2.8.4
+    recommended: 2.8.4
+    deprecated: []
+  dependencies:
+  - name: com.unity.mathematics
+    version: 1.2.1
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.settings-manager
+    version: 1.0.3
+  resolvedDependencies:
+  - name: com.unity.mathematics
+    version: 1.3.3
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.settings-manager
+    version: 2.1.1
+  keywords:
+  - spline
+  - curve
+  - path
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638935739205640000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.splines@2.8/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.splines.git
+    revision: 43fe6df748a4819ca8492b7d90662923a31d488f
+    path: 
+  unityLifecycle:
+    version: 2.8.2
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Fixed\n\n- [DOCATT-4646], [DOCATT-5603], [DOCATT-7045],
+    [DOCATT-5044], [DOCATT-6376], [DOCATT-6626] Clarified API documentation following
+    user feedback.\n- [SPLB-360] Fixed a bug when selecting the clear component option,
+    resulting in out of range exception\n- [SPLB-361] Fixed a bug where the spline
+    would not animate with Scene/Domain reload disabled upon entering playmode\n-
+    [SPLB-356] Fixed a bug where a null reference exception would occur after baking
+    a SplineInstantiate component and then pressing Undo."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 1cb7d86fc7ffee63824ca302b2b8982178eeea83
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 2.8.2
+    minimumUnityVersion: 2022.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.searcher@4.9.4
   testable: 0
   isDirectDependency: 0
@@ -6105,6 +6953,105 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 2.6.2
     minimumUnityVersion: 2022.3.20f1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.settings-manager@2.1.1
+  testable: 0
+  isDirectDependency: 0
+  version: 2.1.1
+  source: 1
+  resolvedPath: /Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.settings-manager@0b8638c5ce86
+  assetPath: Packages/com.unity.settings-manager
+  name: com.unity.settings-manager
+  displayName: Settings Manager
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: A framework for making any serializable field a setting, complete
+    with a pre-built settings interface.
+  errors: []
+  versions:
+    all:
+    - 0.1.0-preview.4
+    - 0.1.0-preview.8
+    - 1.0.0
+    - 1.0.1
+    - 1.0.2
+    - 1.0.3
+    - 2.0.0
+    - 2.0.1
+    - 2.1.0
+    - 2.1.1
+    compatible:
+    - 2.1.1
+    recommended: 2.1.1
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638956174685890000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.settings-manager@2.1/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.settings-manager.git
+    revision: 6eb5ed85eaf3276cc09f0cc4fc3311c72f0fc196
+    path: 
+  unityLifecycle:
+    version: 2.1.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Changes\n\n- Enable Auto Reference on main assembly.\n\n###
+    Bug Fixes\n\n- [case: PBLD-56] Added tooltip to \"Options\" gear icon to specify
+    that context menu items are relevant only to the selected category."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 0b8638c5ce86009d785da17b17aaf629047f64ce
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 2.1.1
+    minimumUnityVersion: 2022.3
   compliance:
     status: 0
     violation:

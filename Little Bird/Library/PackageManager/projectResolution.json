@@ -9,13 +9,23 @@
     "/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/BuiltInPackagesCombined.sha1"
   ],
   "outputs": {
-    "com.unity.ai.navigation@2.0.9": {
+    "com.unity.ai.navigation@2.0.11": {
       "name": "com.unity.ai.navigation",
       "displayName": "AI Navigation",
-      "resolvedPath": "/Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.ai.navigation@5218e4bf7edc",
-      "fingerprint": "5218e4bf7edc04fcad4ed3836c1c41aef334b996",
+      "resolvedPath": "/Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.ai.navigation@78534c21b27d",
+      "fingerprint": "78534c21b27d2c95f8220f5db8dce95627a32911",
       "editorCompatibility": "6000.0.0a1",
-      "version": "2.0.9",
+      "version": "2.0.11",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.cinemachine@3.1.6": {
+      "name": "com.unity.cinemachine",
+      "displayName": "Cinemachine",
+      "resolvedPath": "/Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.cinemachine@285f38545487",
+      "fingerprint": "285f385454873b7d4509f804a9b4c840e834066a",
+      "editorCompatibility": "2022.3.0a1",
+      "version": "3.1.6",
       "source": "registry",
       "testable": false
     },
@@ -29,6 +39,15 @@
       "source": "registry",
       "testable": false
     },
+    "com.unity.feature.development@1.0.2": {
+      "name": "com.unity.feature.development",
+      "displayName": "Engineering",
+      "resolvedPath": "/Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.feature.development@767aadbc6eb7",
+      "fingerprint": "767aadbc6eb72681a4ca807c8fa248e0230a0cef",
+      "version": "1.0.2",
+      "source": "builtin",
+      "testable": false
+    },
     "com.unity.ide.rider@3.0.38": {
       "name": "com.unity.ide.rider",
       "displayName": "JetBrains Rider Editor",
@@ -39,13 +58,13 @@
       "source": "registry",
       "testable": false
     },
-    "com.unity.ide.visualstudio@2.0.26": {
+    "com.unity.ide.visualstudio@2.0.27": {
       "name": "com.unity.ide.visualstudio",
       "displayName": "Visual Studio Editor",
-      "resolvedPath": "/Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.ide.visualstudio@a99d56dec63f",
-      "fingerprint": "a99d56dec63ffb3a911a5a9bce9b77ba862a601c",
+      "resolvedPath": "/Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.ide.visualstudio@dc1ddd4f09b6",
+      "fingerprint": "dc1ddd4f09b68a99b5dc00185f3b7551294e28a7",
       "editorCompatibility": "2021.3.0a1",
-      "version": "2.0.26",
+      "version": "2.0.27",
       "source": "registry",
       "testable": false
     },
@@ -447,6 +466,46 @@
       "source": "builtin",
       "testable": false
     },
+    "com.unity.editorcoroutines@1.0.1": {
+      "name": "com.unity.editorcoroutines",
+      "displayName": "Editor Coroutines",
+      "resolvedPath": "/Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.editorcoroutines@54394ed3283c",
+      "fingerprint": "54394ed3283c1d492d6a80602b05b04bd0863f8b",
+      "editorCompatibility": "2018.1.0a1",
+      "version": "1.0.1",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.performance.profile-analyzer@1.3.4": {
+      "name": "com.unity.performance.profile-analyzer",
+      "displayName": "Profile Analyzer",
+      "resolvedPath": "/Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.performance.profile-analyzer@418130329099",
+      "fingerprint": "41813032909958a6281861a5c3afd259645dbf78",
+      "editorCompatibility": "2021.3.0a1",
+      "version": "1.3.4",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.testtools.codecoverage@1.2.7": {
+      "name": "com.unity.testtools.codecoverage",
+      "displayName": "Code Coverage",
+      "resolvedPath": "/Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.testtools.codecoverage@e4e5058206c0",
+      "fingerprint": "e4e5058206c0366fe007d33a3e2ba7e3db89bc1b",
+      "editorCompatibility": "2019.3.0a1",
+      "version": "1.2.7",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.splines@2.8.2": {
+      "name": "com.unity.splines",
+      "displayName": "Splines",
+      "resolvedPath": "/Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.splines@1cb7d86fc7ff",
+      "fingerprint": "1cb7d86fc7ffee63824ca302b2b8982178eeea83",
+      "editorCompatibility": "2022.3.0a1",
+      "version": "2.8.2",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.searcher@4.9.4": {
       "name": "com.unity.searcher",
       "displayName": "Searcher",
@@ -484,6 +543,16 @@
       "fingerprint": "aea9d3bd5e19f2a90fc3a39919974a5f3613a159",
       "editorCompatibility": "2022.3.20f1",
       "version": "2.6.2",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.settings-manager@2.1.1": {
+      "name": "com.unity.settings-manager",
+      "displayName": "Settings Manager",
+      "resolvedPath": "/Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Library/PackageCache/com.unity.settings-manager@0b8638c5ce86",
+      "fingerprint": "0b8638c5ce86009d785da17b17aaf629047f64ce",
+      "editorCompatibility": "2022.3.0a1",
+      "version": "2.1.1",
       "source": "registry",
       "testable": false
     },
