@@ -13,6 +13,8 @@ namespace StarterAssets
 		public bool jump;
 		public bool sprint;
 
+		public bool shoot;
+
 		[Header("Movement Settings")]
 		public bool analogMovement;
 
@@ -43,6 +45,16 @@ namespace StarterAssets
 		{
 			SprintInput(value.isPressed);
 		}
+
+		// Called automatically by PlayerInput's Send Messages behavior
+public void OnShoot(InputValue value)
+{
+ShootInput(value.isPressed);
+}
+public void ShootInput(bool newShootState)
+{
+shoot = newShootState;
+}
 #endif
 
 
