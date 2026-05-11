@@ -431,6 +431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 154928304}
   - component: {fileID: 154928303}
+  - component: {fileID: 154928305}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -466,6 +467,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &154928305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154928302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 842a89ea290be4c0bbf8f4991ed70688, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraShake
+  cameraTarget: {fileID: 1181607456}
 --- !u!1 &182233408
 GameObject:
   m_ObjectHideFlags: 0
@@ -1544,6 +1558,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b514ce5345a42401aa830f1ab64a1500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  damage: 10
+  damageInterval: 1
+  attackRange: 1.5
 --- !u!136 &1117581272
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1813,6 +1830,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1363581459}
+    - targetCorrespondingSourceObject: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1363581461}
   m_SourcePrefab: {fileID: 100100000, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
 --- !u!1 &1249597757
 GameObject:
@@ -1943,6 +1963,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0998ab5abcd54e93bc31608caac14d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
+  maxHealth: 100
+--- !u!114 &1363581461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363581452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 846aa634cc1054285a68e38b2e407d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHealth: 100
 --- !u!1 &1388044038
 GameObject:

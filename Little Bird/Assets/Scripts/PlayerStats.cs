@@ -35,11 +35,14 @@ public class PlayerStats : MonoBehaviour
 
     // --- Eggplant: health boost ---
     public void BoostHealth(float amount)
+{
+    PlayerHealth health = GetComponent<PlayerHealth>();
+    if (health != null)
     {
-        currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
-        Debug.Log("Health: " + currentHealth);
+        health.currentHealth = Mathf.Min(health.currentHealth + amount, health.maxHealth);
+        Debug.Log("Health restored!");
     }
-
+}
     // --- Broccoli: jump boost ---
     public void BoostJump(float amount, float duration)
     {
