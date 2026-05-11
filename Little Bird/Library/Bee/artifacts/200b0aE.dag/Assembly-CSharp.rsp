@@ -467,6 +467,8 @@
 "Assets/Scripts/Collectible.cs"
 "Assets/Scripts/CollectibleFloat.cs"
 "Assets/Scripts/Health.cs"
+"Assets/Scripts/MainMenu.cs"
+"Assets/Scripts/PauseMenu.cs"
 "Assets/Scripts/PlayerStats.cs"
 "Assets/Scripts/Robot.cs"
 "Assets/Scripts/Weapon.cs"

@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/ian/Documents/GitHub/LittleBird-Game/Little Bird/Temp/Burst/burst-aot9duse4zp.l65/f8c59554031ab037b49bdd8e4415c9ea.bundle'
+binary-path:     '/Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Temp/Burst/burst-aotbd7ljqnv.fi4/f8c59554031ab037b49bdd8e4415c9ea.bundle'
 relocations:
   - { offset: 0x1E, size: 0x8, addend: 0x0, symName: '_Unity.Burst.Intrinsics.X86.DoSetCSRTrampoline(int bits) -> void_643b1bcf5ea32ccfe915405fcb464383 from Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null', symObjAddr: 0x50, symBinAddr: 0x498, symSize: 0x10 }
   - { offset: 0x2B, size: 0x8, addend: 0x0, symName: '_Unity.Burst.Intrinsics.X86.DoSetCSRTrampoline(int bits) -> void_643b1bcf5ea32ccfe915405fcb464383 from Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null', symObjAddr: 0x50, symBinAddr: 0x498, symSize: 0x10 }
