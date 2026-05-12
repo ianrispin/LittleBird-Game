@@ -132,6 +132,7 @@
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER
 -define:TEXTCORE_FONT_ENGINE_1_6_OR_NEWER
+-define:DOTWEEN
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.iOS.Extensions.Xcode.dll"
@@ -391,6 +392,7 @@
 -r:"/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/Resources/Scripting/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
 -r:"/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/Resources/Scripting/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/Resources/Scripting/NetStandard/ref/2.1.0/netstandard.dll"
+-r:"Assets/Plugins/Demigiant/DOTween/DOTween.dll"
 -r:"Library/PackageCache/com.unity.collections@aea9d3bd5e19/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll"
 -r:"Library/PackageCache/com.unity.collections@aea9d3bd5e19/Unity.Collections.Tests/System.IO.Hashing/System.IO.Hashing.dll"
 -r:"Library/PackageCache/com.unity.collections@aea9d3bd5e19/Unity.Collections.Tests/System.Runtime.CompilerServices.Unsafe/System.Runtime.CompilerServices.Unsafe.dll"
@@ -398,6 +400,7 @@
 -r:"Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff/Mono.Cecil.dll"
 -r:"Library/PackageCache/com.unity.testtools.codecoverage@e4e5058206c0/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@191c0d7e3b69/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-firstpass.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/PPv2URPConverters.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.AI.Navigation.Editor.ConversionSystem.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.AI.Navigation.Editor.ref.dll"
@@ -463,6 +466,22 @@
 -analyzer:"/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/Microlight/MicroBar/DemoScene/DemoManager.cs"
+"Assets/Microlight/MicroBar/Scripts/Animations/AnimBuilder.cs"
+"Assets/Microlight/MicroBar/Scripts/Animations/AnimCommand.cs"
+"Assets/Microlight/MicroBar/Scripts/Animations/Enums/AnimCommand_Enums.cs"
+"Assets/Microlight/MicroBar/Scripts/Animations/Enums/RenderType.cs"
+"Assets/Microlight/MicroBar/Scripts/Animations/Enums/SimpleAnim.cs"
+"Assets/Microlight/MicroBar/Scripts/Animations/Enums/UpdateAnim.cs"
+"Assets/Microlight/MicroBar/Scripts/Animations/MicroBarAnimation.cs"
+"Assets/Microlight/MicroBar/Scripts/Animations/SimpleAnimBuilder.cs"
+"Assets/Microlight/MicroBar/Scripts/Animations/Structs/AnimationInfo.cs"
+"Assets/Microlight/MicroBar/Scripts/Animations/Structs/GraphicsDefaultValues.cs"
+"Assets/Microlight/MicroBar/Scripts/MaxHealthEnums.cs"
+"Assets/Microlight/MicroBar/Scripts/MicroBar.cs"
+"Assets/Microlight/MicroBar/Scripts/MicroBarModeEnum.cs"
+"Assets/Microlight/MicroBar/Scripts/SimpleMicroBar.cs"
+"Assets/Scripts/Bear.cs"
 "Assets/Scripts/Billboard.cs"
 "Assets/Scripts/CameraShake.cs"
 "Assets/Scripts/Collectible.cs"
