@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Temp/Burst/burst-aotn2qu7dt6.ily/a4364337ead1e1deef11d2a5bdb9ceca.bundle'
+binary-path:     '/Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Temp/Burst/burst-aotxt36dynr.y6t/a4364337ead1e1deef11d2a5bdb9ceca.bundle'
 relocations:
   - { offset: 0x1E, size: 0x8, addend: 0x0, symName: '_Unity.Jobs.IJobForExtensions.ForJobStruct`1<UnityEngine.Rendering.Universal.ZBinningJob>.Execute(ref UnityEngine.Rendering.Universal.ZBinningJob jobData, System.IntPtr additionalPtr, System.IntPtr bufferRangePatchData, ref Unity.Jobs.LowLevel.Unsafe.JobRanges ranges, int jobIndex) -> void_102c7c0e60ec1859b6775dfe49a19dc2 from UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null', symObjAddr: 0x70, symBinAddr: 0x4B8, symSize: 0x69C }
   - { offset: 0x5B, size: 0x8, addend: 0x0, symName: '_Unity.Jobs.IJobForExtensions.ForJobStruct`1<UnityEngine.Rendering.Universal.ZBinningJob>.Execute(ref UnityEngine.Rendering.Universal.ZBinningJob jobData, System.IntPtr additionalPtr, System.IntPtr bufferRangePatchData, ref Unity.Jobs.LowLevel.Unsafe.JobRanges ranges, int jobIndex) -> void_102c7c0e60ec1859b6775dfe49a19dc2 from UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null', symObjAddr: 0x70, symBinAddr: 0x4B8, symSize: 0x69C }
