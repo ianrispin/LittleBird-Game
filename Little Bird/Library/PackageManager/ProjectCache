@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639137891630000000
+      ticks: 639142307770000000
     m_Hash: 4195664849
   m_LockFileStatus:
     m_FilePath: /Users/gcmendoza/UnityProjects/LittleBird-Game/Little Bird/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639140321410000000
+      ticks: 639142307770000000
     m_Hash: 1021595243
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
