@@ -7,7 +7,7 @@ public class Fox : EnemyAI
         damage = 8f;            // lighter hits
         attackInterval = 0.5f;  // but very fast
         chaseRange = 12f;
-        attackRange = 2.1f;
+        attackRange = 4.1f;
     }
 
     protected override void DealDamage()

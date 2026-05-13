@@ -75,6 +75,17 @@ public class Health : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject);
+        EnemyAI enemy = GetComponent<EnemyAI>();
+        if (enemy != null)
+        {
+            Debug.Log("Calling EnemyAI.Die() on " + gameObject.name);
+            enemy.Die();
+        }
+        else
+        {
+            // Player or object with no EnemyAI
+            Debug.Log(gameObject.name + " has no EnemyAI, destroying directly");
+            Destroy(gameObject);
+        }
     }
 }

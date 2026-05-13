@@ -38,6 +38,9 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
+        // Stop updating if dead
+    if (!agent.enabled) return;
+    
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
         switch (currentState)
@@ -129,11 +132,25 @@ public class EnemyAI : MonoBehaviour
     }
 
     public virtual void Die()
+{
+    Debug.Log("Die called on " + gameObject.name);
+    
+    if (animator != null)
     {
-        if (animator != null)
-            animator.SetTrigger("Death");
-        agent.enabled = false;
-        GetComponent<Collider>().enabled = false;
-        Destroy(gameObject, 2f);
+        Debug.Log("Setting Death trigger");
+        animator.SetTrigger("Death");
     }
+    else
+    {
+        Debug.Log("Animator is null!");
+    }
+    
+    agent.enabled = false;
+    
+    Collider col = GetComponent<Collider>();
+    if (col != null)
+        col.enabled = false;
+
+    Destroy(gameObject, 3f);
+}
 }
