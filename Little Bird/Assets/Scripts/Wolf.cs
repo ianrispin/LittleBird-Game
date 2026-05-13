@@ -5,9 +5,9 @@ public class Wolf : EnemyAI
     void Awake()
     {
         damage = 20f;           // hits hard
-        attackInterval = 2f;    // but slowly
+        attackInterval = 1f;    // but slowly
         chaseRange = 15f;       // good vision
-        attackRange = 2.1f;
+        attackRange = 4.1f;
     }
 
     protected override void DealDamage()
@@ -17,4 +17,14 @@ public class Wolf : EnemyAI
         // shake harder than fox
         CameraShake.instance.Shake(0.4f, 0.3f);
     }
+
+    void OnCollisionEnter(Collision collision)
+{
+    Debug.Log("Wolf hit by: " + collision.gameObject.name);
+}
+
+void OnTriggerEnter(Collider other)
+{
+    Debug.Log("Wolf triggered by: " + other.gameObject.name);
+}
 }

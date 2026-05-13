@@ -9,7 +9,7 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Detection")]
     public float chaseRange = 10f;
-    public float attackRange = 1.5f;
+    public float attackRange = 2.1f;
 
     [Header("Patrol")]
     public Transform[] patrolPoints;
@@ -22,11 +22,17 @@ public class EnemyAI : MonoBehaviour
 
     protected NavMeshAgent agent;
     protected Transform player;
+    protected Animator animator;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        animator = GetComponentInChildren<Animator>();
         player = FindFirstObjectByType<FirstPersonController>().transform;
+
+        // Fix backwards movement
+        agent.updateRotation = false;
+
         GoToNextPatrolPoint();
     }
 
@@ -56,14 +62,26 @@ public class EnemyAI : MonoBehaviour
                     currentState = EnemyState.Chase;
                 break;
         }
+
+        // Update speed parameter for walk/gallop transitions
+        if (animator != null)
+            animator.SetFloat("Speed", agent.velocity.magnitude);
+
+        // Manually rotate based on velocity
+        if (agent.velocity.sqrMagnitude > 0.1f)
+        {
+            transform.rotation = Quaternion.LookRotation(agent.velocity.normalized);
+        }
     }
 
     void Patrol()
     {
         if (patrolPoints.Length == 0) return;
-
         if (!agent.pathPending && agent.remainingDistance < 0.5f)
             GoToNextPatrolPoint();
+
+        if (animator != null)
+            animator.SetBool("IsAttacking", false);
     }
 
     void GoToNextPatrolPoint()
@@ -76,12 +94,21 @@ public class EnemyAI : MonoBehaviour
     void Chase()
     {
         agent.SetDestination(player.position);
+        if (animator != null)
+            animator.SetBool("IsAttacking", false);
     }
 
     void Attack()
     {
-        agent.SetDestination(transform.position); // stop moving
-        transform.LookAt(player);
+        agent.SetDestination(transform.position);
+
+        // Face player while attacking
+        Vector3 direction = (player.position - transform.position).normalized;
+        direction.y = 0;
+        transform.rotation = Quaternion.LookRotation(direction);
+
+        if (animator != null)
+            animator.SetBool("IsAttacking", true);
 
         attackTimer += Time.deltaTime;
         if (attackTimer >= attackInterval)
@@ -99,5 +126,14 @@ public class EnemyAI : MonoBehaviour
             playerHealth.TakeDamage(damage);
             CameraShake.instance.Shake(0.2f, 0.15f);
         }
+    }
+
+    public virtual void Die()
+    {
+        if (animator != null)
+            animator.SetTrigger("Death");
+        agent.enabled = false;
+        GetComponent<Collider>().enabled = false;
+        Destroy(gameObject, 2f);
     }
 }
