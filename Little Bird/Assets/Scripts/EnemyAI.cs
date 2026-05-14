@@ -141,6 +141,11 @@ public class EnemyAI : MonoBehaviour
     public virtual void Die()
     {
         Debug.Log("Die called on " + gameObject.name);
+
+        if (LevelManager.instance != null)
+        {
+            LevelManager.instance.AddKill();
+        }
         
         if (animator != null)
         {
