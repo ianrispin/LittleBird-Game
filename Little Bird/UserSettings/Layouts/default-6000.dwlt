@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEditor.dll::UnityEditor.ContainerWindow
   m_PixelRect:
     serializedVersion: 2
-    x: 1092
+    x: 1089
     y: 307
     width: 321
     height: 578
@@ -38,7 +38,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 222
+    x: 162
     y: 66
     width: 1248
     height: 821
@@ -630,20 +630,6 @@ MonoBehaviour:
       layout: 4
       size: {x: 0, y: 0}
       sizeOverridden: 0
-    - dockPosition: 0
-      containerId: overlay-toolbar__top
-      displayed: 1
-      id: Services/Unity Version Control
-      index: 6
-      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
-      floating: 0
-      collapsed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      layout: 4
-      size: {x: 0, y: 0}
-      sizeOverridden: 0
     - dockPosition: 1
       containerId: overlay-toolbar__top
       displayed: 1
@@ -761,12 +747,26 @@ MonoBehaviour:
       displayed: 1
       id: Play Mode Controls
       index: 0
-      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":-602.5,"y":-36.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":3,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: -602.5, y: -36}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
+      snapCorner: 0
+      layout: 4
+      size: {x: 0, y: 0}
+      sizeOverridden: 0
+    - dockPosition: 0
+      containerId: overlay-toolbar__top
+      displayed: 1
+      id: Services/Unity Version Control
+      index: 6
+      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      floating: 0
+      collapsed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
       layout: 4
       size: {x: 0, y: 0}
       sizeOverridden: 0
@@ -1373,7 +1373,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -6.5532885, y: 0.36475754, z: 4.866789}
+    m_Target: {x: -5.6010704, y: 2.4982598, z: -11.2703905}
     speed: 2
     m_Value: {x: -6.5532885, y: 0.36475754, z: 4.866789}
   m_RenderMode: 0
@@ -1421,11 +1421,11 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.482
   m_Rotation:
-    m_Target: {x: 0.21706206, y: -0.09645832, z: 0.02155975, w: 0.9711415}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
     m_Value: {x: -0.21706206, y: 0.09645832, z: -0.021559753, w: -0.9711415}
   m_Size:
-    m_Target: 9.687199
+    m_Target: 4.51151
     speed: 2
     m_Value: 9.687199
   m_Ortho:
@@ -1615,10 +1615,10 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 161
-      height: 542.5
-    m_Scale: {x: 0.12578125, y: 0.12578125}
-    m_Translation: {x: 80.5, y: 271.25}
+      width: 142
+      height: 491
+    m_Scale: {x: 0.1109375, y: 0.1109375}
+    m_Translation: {x: 71, y: 245.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -1626,12 +1626,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -640
-      y: -2156.5217
+      y: -2212.9578
       width: 1280
-      height: 4313.0435
+      height: 4425.9155
     m_MinimalGUI: 1
-  m_defaultScale: 0.12578125
-  m_LastWindowPixelSize: {x: 161, y: 563.5}
+  m_defaultScale: 0.1109375
+  m_LastWindowPixelSize: {x: 142, y: 512}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -1712,8 +1712,8 @@ MonoBehaviour:
       m_Data: 51788
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49512
-    - m_Data: 49514
+    - m_Data: 53990
+    - m_Data: 53992
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1746,8 +1746,8 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49512
-    - m_Data: 49514
+    - m_Data: 53990
+    - m_Data: 53992
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
