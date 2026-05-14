@@ -24,7 +24,7 @@ public class EnemyAI : MonoBehaviour
     protected Transform player;
     protected Animator animator;
 
-    void Start()
+    protected void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
@@ -77,7 +77,7 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    void Patrol()
+    protected void Patrol()
     {
         if (patrolPoints.Length == 0) return;
         if (!agent.pathPending && agent.remainingDistance < 0.5f)
@@ -87,7 +87,7 @@ public class EnemyAI : MonoBehaviour
             animator.SetBool("IsAttacking", false);
     }
 
-    void GoToNextPatrolPoint()
+    protected void GoToNextPatrolPoint()
     {
         if (patrolPoints.Length == 0) return;
         agent.SetDestination(patrolPoints[currentPatrolIndex].position);

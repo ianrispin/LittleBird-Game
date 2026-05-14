@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Microlight.MicroBar;
 
 public class Health : MonoBehaviour
@@ -73,19 +74,19 @@ public class Health : MonoBehaviour
             enemyBar.UpdateBar(currentHealth);
     }
 
-    void Die()
-    {
-        EnemyAI enemy = GetComponent<EnemyAI>();
-        if (enemy != null)
-        {
-            Debug.Log("Calling EnemyAI.Die() on " + gameObject.name);
-            enemy.Die();
-        }
-        else
-        {
-            // Player or object with no EnemyAI
-            Debug.Log(gameObject.name + " has no EnemyAI, destroying directly");
-            Destroy(gameObject);
-        }
-    }
+  void Die()
+{
+    EnemyAI enemy = GetComponent<EnemyAI>();
+    Bull bull = GetComponent<Bull>();
+    Nest nest = GetComponent<Nest>();
+
+    if (enemy != null)
+        enemy.Die();
+    else if (bull != null)
+        bull.Die();
+    else if (nest != null)
+        SceneManager.LoadScene("GameOver");
+    else
+        SceneManager.LoadScene("GameOver");
+}
 }
