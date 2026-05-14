@@ -133,7 +133,6 @@
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -define:UNITY_EDITOR_ONLY_COMPILATION
--r:"/Applications/Unity/Hub/Editor/6000.3.6f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
 -r:"/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.iOS.Extensions.Xcode.dll"
 -r:"/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll"
 -r:"/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/Resources/Scripting/Managed/UnityEditor.Graphs.dll"
@@ -460,6 +459,8 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.ShaderGraph.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Splines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Splines.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Unity.TerrainTools.Editor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Unity.TerrainTools.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.TestTools.CodeCoverage.Editor.ref.dll"
@@ -495,6 +496,8 @@
 "Assets/Microlight/MicroBar/Editor/MicroEditor/MicroEditor_DrawUtility.cs"
 "Assets/Microlight/MicroBar/Editor/MicroEditor/MicroEditor_Utility.cs"
 "Assets/Microlight/MicroBar/Editor/SimpleMicroBar_Drawer.cs"
+"Assets/nTools/PrefabPainter/Scripts/Editor/PrafabPainterGUI.cs"
+"Assets/nTools/PrefabPainter/Scripts/Editor/PrefabPainter.cs"
 "Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs"
 -langversion:9.0
 /deterministic

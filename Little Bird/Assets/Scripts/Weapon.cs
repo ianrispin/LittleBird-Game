@@ -24,12 +24,15 @@ public class Weapon : MonoBehaviour
             {
                 Debug.Log("Hit: " + hit.collider.gameObject.name);
 
-                Health health = hit.collider.GetComponent<Health>();
-                if (health == null)
-                    health = hit.collider.GetComponentInParent<Health>();
+                if (!hit.collider.CompareTag("Nest"))
+                {
+                    Health health = hit.collider.GetComponent<Health>();
+                    if (health == null)
+                        health = hit.collider.GetComponentInParent<Health>();
 
-                if (health != null)
-                    health.TakeDamage(damage);
+                    if (health != null)
+                        health.TakeDamage(damage);
+                }
             }
             starterAssetsInputs.ShootInput(false);
         }

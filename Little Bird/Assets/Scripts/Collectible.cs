@@ -12,10 +12,11 @@ public class Collectible : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Print collection message
             Debug.Log(veggieType.ToString() + " collected!");
 
             PlayerStats stats = other.GetComponent<PlayerStats>();
+            VeggieEffect veggieEffect = other.GetComponent<VeggieEffect>();
+
             if (stats != null)
             {
                 switch (veggieType)
@@ -31,6 +32,9 @@ public class Collectible : MonoBehaviour
                         break;
                 }
             }
+
+            if (veggieEffect != null)
+                veggieEffect.Show(veggieType);
 
             Destroy(gameObject);
         }
