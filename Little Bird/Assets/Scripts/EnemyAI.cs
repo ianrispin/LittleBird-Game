@@ -21,16 +21,19 @@ public class EnemyAI : MonoBehaviour
     private float attackTimer = 0f;
 
     protected NavMeshAgent agent;
-    protected Transform player;
+    // CHANGED: Generalized to 'target' instead of 'player'
+    protected Transform target; 
     protected Animator animator;
 
-    protected void Start()
+    // CHANGED: Made Start virtual so child classes like Bull can override it
+    protected virtual void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
-        player = FindFirstObjectByType<FirstPersonController>().transform;
+        
+        // Default target is the player, so other enemies still work perfectly
+        target = FindFirstObjectByType<FirstPersonController>().transform;
 
-        // Fix backwards movement
         agent.updateRotation = false;
 
         GoToNextPatrolPoint();
@@ -38,39 +41,37 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
-        // Stop updating if dead
-    if (!agent.enabled) return;
+        if (!agent.enabled) return;
     
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+        // CHANGED: Calculate distance to the generic target
+        float distanceToTarget = Vector3.Distance(transform.position, target.position);
 
         switch (currentState)
         {
             case EnemyState.Patrol:
                 Patrol();
-                if (distanceToPlayer <= chaseRange)
+                if (distanceToTarget <= chaseRange)
                     currentState = EnemyState.Chase;
                 break;
 
             case EnemyState.Chase:
                 Chase();
-                if (distanceToPlayer <= attackRange)
+                if (distanceToTarget <= attackRange)
                     currentState = EnemyState.Attack;
-                else if (distanceToPlayer > chaseRange)
+                else if (distanceToTarget > chaseRange)
                     currentState = EnemyState.Patrol;
                 break;
 
             case EnemyState.Attack:
                 Attack();
-                if (distanceToPlayer > attackRange)
+                if (distanceToTarget > attackRange)
                     currentState = EnemyState.Chase;
                 break;
         }
 
-        // Update speed parameter for walk/gallop transitions
         if (animator != null)
             animator.SetFloat("Speed", agent.velocity.magnitude);
 
-        // Manually rotate based on velocity
         if (agent.velocity.sqrMagnitude > 0.1f)
         {
             transform.rotation = Quaternion.LookRotation(agent.velocity.normalized);
@@ -96,7 +97,8 @@ public class EnemyAI : MonoBehaviour
 
     void Chase()
     {
-        agent.SetDestination(player.position);
+        // CHANGED: Chase the target
+        agent.SetDestination(target.position);
         if (animator != null)
             animator.SetBool("IsAttacking", false);
     }
@@ -105,8 +107,8 @@ public class EnemyAI : MonoBehaviour
     {
         agent.SetDestination(transform.position);
 
-        // Face player while attacking
-        Vector3 direction = (player.position - transform.position).normalized;
+        // CHANGED: Face the target
+        Vector3 direction = (target.position - transform.position).normalized;
         direction.y = 0;
         transform.rotation = Quaternion.LookRotation(direction);
 
@@ -123,34 +125,39 @@ public class EnemyAI : MonoBehaviour
 
     protected virtual void DealDamage()
     {
-        Health playerHealth = player.GetComponent<Health>();
-        if (playerHealth != null)
+        // CHANGED: Deal damage to whatever the target is
+        Health targetHealth = target.GetComponent<Health>();
+        if (targetHealth != null)
         {
-            playerHealth.TakeDamage(damage);
-            CameraShake.instance.Shake(0.2f, 0.15f);
+            targetHealth.TakeDamage(damage);
+            
+            if (target.GetComponent<FirstPersonController>() != null)
+            {
+                CameraShake.instance.Shake(0.2f, 0.15f);
+            }
         }
     }
 
     public virtual void Die()
-{
-    Debug.Log("Die called on " + gameObject.name);
-    
-    if (animator != null)
     {
-        Debug.Log("Setting Death trigger");
-        animator.SetTrigger("Death");
-    }
-    else
-    {
-        Debug.Log("Animator is null!");
-    }
-    
-    agent.enabled = false;
-    
-    Collider col = GetComponent<Collider>();
-    if (col != null)
-        col.enabled = false;
+        Debug.Log("Die called on " + gameObject.name);
+        
+        if (animator != null)
+        {
+            Debug.Log("Setting Death trigger");
+            animator.SetTrigger("Death");
+        }
+        else
+        {
+            Debug.Log("Animator is null!");
+        }
+        
+        agent.enabled = false;
+        
+        Collider col = GetComponent<Collider>();
+        if (col != null)
+            col.enabled = false;
 
-    Destroy(gameObject, 3f);
-}
+        Destroy(gameObject, 3f);
+    }
 }
